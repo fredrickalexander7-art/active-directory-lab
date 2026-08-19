@@ -37,4 +37,4 @@ Unlocked the account in Active Directory Users and Computers (Sales OU → `jdoe
 - Consider whether a 2-attempt lockout threshold is appropriate for production use; it's intentionally aggressive here for lab/demonstration purposes, but a real deployment would likely use a higher threshold (5-10 attempts) to reduce accidental lockouts from simple typos.
 
 ## Screenshots
-- `/Screenshots/` — lockout failure screen, Event Viewer 4740 detail (Account That Was Locked Out / Caller Computer Name), Event Viewer 4625 detail (Status/Sub Status codes), successful login after fix
+- `Screenshots/` — lockout failure screen, Event Viewer 4740 detail (Account That Was Locked Out / Caller Computer Name), Event Viewer 4625 detail (Status/Sub Status codes), successful login after fix
