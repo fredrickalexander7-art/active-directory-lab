@@ -51,7 +51,7 @@ Short version: a Fine-Grained Password Policy was applied to a `Sales Users` sec
 
 ## Screenshots
 
-See [`screenshots/`](screenshots/) for the full set, including:
+See [`Acreenshots/`](Screenshots/) for the full set, including:
 - Server Manager confirming AD DS/DNS roles installed and DC01 online
 - Active Directory Users and Computers — OU structure and test users
 - Group Policy Management — all three OUs with linked GPOs
