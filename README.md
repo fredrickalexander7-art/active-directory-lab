@@ -45,7 +45,7 @@ graph TD
 
 ## Incident: Sales user account lockout
 
-Full STAR-format writeup: [`docs/ticket-writeup.md`](docs/ticket-writeup.md)
+Full STAR-format writeup: [`docs/ticket-writeup.md`](ticket-writeup.md)
 
 Short version: a Fine-Grained Password Policy was applied to a `Sales Users` security group (lockout after 2 failed attempts). The `jdoe` account was intentionally locked out, then diagnosed using Windows Event Viewer on the domain controller (Event ID 4740 — Account Lockout, and Event ID 4625 — Logon Failure), root-caused, and fixed by unlocking the account in Active Directory Users and Computers. A real troubleshooting detour is documented too: account-lockout auditing wasn't enabled by default and had to be turned on via Group Policy, and the first investigation attempt failed because Event Viewer was being checked on the client instead of the domain controller — a genuine lesson about where different security events get logged in a domain environment.
 
